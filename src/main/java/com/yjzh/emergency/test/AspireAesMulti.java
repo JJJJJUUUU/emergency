@@ -67,7 +67,6 @@ public class AspireAesMulti {
 	}
 	
 	public String decrypt(String txt) {
-
 			try {
 				cipher.init(Cipher.DECRYPT_MODE, key, iv);
 				byte[] b = txt.getBytes();
