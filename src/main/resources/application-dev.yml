@@ -1,0 +1,12 @@
+#端口
+server:
+    port: 8888
+##############################url调用接口参数##############################
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        name: prod
+        url: jdbc:mysql://127.0.0.1:3306/prod?useSSL=false&autoReconnect=true&characterEncoding=UTF-8&serverTimezone=UTC
+        username: root
+        password: root

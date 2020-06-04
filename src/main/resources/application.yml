@@ -1,0 +1,22 @@
+spring:
+    mvc:
+        favicon:
+            enabled: false
+    profiles:
+        active: dev
+    thymeleaf:
+        cache: false
+
+
+mybatis:  #mybatis整合信息
+    config-location: classpath:mybatis/mybatis.cfg.xml  #mybatis所在路径
+    type-aliases-package: com.yjzh.emergency.entiry #entity别名类
+    mapper-locations:
+    - classpath:mybatis/mapper/*.xml #mapper映射文件
+
+#pagehelper分页插件配置
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
